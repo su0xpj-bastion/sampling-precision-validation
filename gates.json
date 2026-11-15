@@ -1,0 +1,8 @@
+{
+  "_comment": "Accuracy gates vs the fp32 reference. top1 = agreement on decisive positions (fp32 margin >= 0.05). KL in nats, mean over positions. Thresholds sit between observed pass/fail populations, not at them.",
+  "fp16":     {"top1_agreement_min": 0.999, "kl_max": 1e-4, "ppl_delta_pct_max": 0.10},
+  "bf16":     {"top1_agreement_min": 0.995, "kl_max": 5e-4, "ppl_delta_pct_max": 0.25},
+  "fp8_e4m3": {"top1_agreement_min": 0.990, "kl_max": 1.5e-2, "ppl_delta_pct_max": 1.5},
+  "fp8_e5m2": {"top1_agreement_min": 0.990, "kl_max": 1.5e-2, "ppl_delta_pct_max": 1.5},
+  "int8":     {"top1_agreement_min": 0.990, "kl_max": 5e-3, "ppl_delta_pct_max": 0.5}
+}
