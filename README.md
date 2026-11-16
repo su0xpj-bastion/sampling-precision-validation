@@ -24,7 +24,7 @@ flowchart LR
 
 ## Sampler audit
 
-Five named checks decide whether a sampler build is correct. Each of the four seeded defects is a bug class that has shown up in real sampler code, and the suite proves it catches every one (`test_audit_catches_seeded_bug`):
+Five named checks decide whether a sampler build is correct. Each of the four seeded defects is a realistic bug class for sampler code, and the suite proves it catches every one (`test_audit_catches_seeded_bug`):
 
 | Build | Caught by |
 |---|---|
